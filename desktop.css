@@ -94,7 +94,7 @@
     nav .menu a:hover::after{/*滑過時虛擬類別出現*/
         color: #ffc98a;
 /*        width: 100%;*/
-       transform: scaleX(1)
+       transform: scaleX(1);
        
         
         
