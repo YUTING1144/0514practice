@@ -48,7 +48,8 @@
         height: 60px;
         line-height: 60px;
         text-decoration: none;
-        color: #e2e2e2;
+        color: #aa7070;
+        transition: all .3s;
     }
     header {
         padding-top: 300px;
@@ -87,18 +88,33 @@
         margin-top: 30px;
     }
     .btn:hover {
-        background-color: #ccc;
+        background-color: #adffef;
         color: #5f5479;
     }
-    .menu a:hover{
+    nav .menu a:hover::after{/*滑過時虛擬類別出現*/
         color: #ffc98a;
+/*        width: 100%;*/
+       transform: scaleX(1)
+       
+        
+        
+    }
+    nav .menu a::after{/*虛擬元素*/
+        content: "";
+        border-bottom: 2px solid #ffa62c;
+        display: block;
+        margin-top: -15px;
+/*        width: 0;*/
+         transition: all .3s;
+        transform: scaleX(0);
     }
     .btn {
         display: inline-block;
         padding: 8px 30px;
         background-color: #333;
-        color: #eee;
+        color: #aa7070;
         text-decoration: none;
+        transition: all .3s;
     }
     .btn-inverse {
         display: inline-block;
